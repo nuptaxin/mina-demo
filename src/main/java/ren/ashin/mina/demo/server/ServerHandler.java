@@ -62,6 +62,7 @@ public class ServerHandler extends IoHandlerAdapter {
         // session = ioSessionMap.values().iterator().next();
 //        messageSent(session, "test");
 
+        System.out.println("sessionId:"+session.getId());
         if (str.equals("close")) {
             session.write("close");
             session.close(false);

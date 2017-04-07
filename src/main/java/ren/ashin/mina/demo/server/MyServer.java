@@ -21,6 +21,7 @@ import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
 public class MyServer {
     private static Logger logger = Logger.getLogger(MyServer.class); // 日志
     private static final int port = 8899; // 端口
+    // TCP 调试工具发送16进制的30 31 0A即可(只需一个换行即可)
 
     public static void main(String[] args) {
         // 创建一个非阻塞的server端的socket
